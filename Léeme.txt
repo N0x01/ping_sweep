@@ -1,0 +1,18 @@
+PingSweep
+
+Este es un simple programa que utiliza el comando PING nativo del sistema operativo para poder identificar equipos o dispositivos activos en la red.
+
+La razón por la hice este programa surge un día que intentaba de identificar dispositivos activos, como iPads, iPhones y teléfonos Androids, utilizando el programa Nmap sin tener éxito alguno, utilicé varias configuraciones del programa Nmap sin que este me mostrara que había identificado los dispositivos activos, sólo me mostraba computadoras conectadas a la red.
+
+La forma en como trabaja el programa es enviando una cantidad de 8 paquetes Echo Request (esto porque había veces que los dispositivos tardaban en contestar la solicitud de ping) y después analiza el código de salida del comando PING para determinar si detrás de la dirección IP hay un dispositivo activo. 
+
+Cada dispositivo activo identificado es guardado en una lista que será mostrada al finalizar las pruebas de PING.
+
+Obviamente en ambientes de red monitorizados dispararía una alerta puesto que no hay ninguna configuración para no ser detectado.
+
+Posteriormente trataré de mejorar las funciones de este programa, por lo mientras espero que sea de ayuda para administradores de red, pentester en la fase de reconocimiento, o cualquier persona que quiera identificar equipos activos en su red casera y detectar dispositivos que no deberían de estar conectados.
+
+Hasta la próxima.
+
+Gastón Olguín Ortega
+23 agosto 2016
